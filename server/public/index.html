@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LED Signs Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🚦 LED Signs Dashboard</h1>
+            <div class="status-indicator">
+                <span id="connection-status" class="status-offline">Disconnected</span>
+            </div>
+        </header>
+
+        <div class="dashboard">
+            <div class="signs-grid" id="signs-grid">
+                <!-- Signs will be populated by JavaScript -->
+            </div>
+        </div>
+
+        <div class="controls">
+            <button id="refresh-btn" class="btn">🔄 Refresh</button>
+            <button id="test-all-btn" class="btn">🧪 Test All Signs</button>
+            <button id="map-btn" class="btn">🗺️ Map View</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
